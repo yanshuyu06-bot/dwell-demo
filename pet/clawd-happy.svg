@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -25 45 45" width="500" height="500" role="img" aria-label="小屋的小兽">
+  <title>小屋的小兽 · 很高兴</title>
+  <defs>
+    <style>
+      .hop { transform-origin: 7.5px 15px; animation: hop .9s ease-in-out infinite; }
+      .sp  { animation: sp 1.4s ease-in-out infinite; }
+      .sp2 { animation-delay: .5s; }
+      @keyframes hop { 0%,100% { transform: translateY(0) scale(1,1); } 35% { transform: translateY(-1.6px) scale(.98,1.03); } }
+      @keyframes sp  { 0%,100% { opacity: .2; transform: scale(.7); } 50% { opacity: 1; transform: scale(1); } }
+      @media (prefers-reduced-motion: reduce) { .hop, .sp { animation: none; } }
+    </style>
+  </defs>
+  <ellipse cx="7.5" cy="15.4" rx="3.6" ry=".7" fill="#2C2A28" opacity=".1"/>
+  <g fill="#E8B26A">
+    <path class="sp"  d="M1.2 3.2l.5 1.2 1.2.5-1.2.5-.5 1.2-.5-1.2L-.5 4.9l1.2-.5z"/>
+    <path class="sp sp2" d="M13.8 2.2l.45 1.05 1.05.45-1.05.45-.45 1.05-.45-1.05-1.05-.45 1.05-.45z"/>
+  </g>
+  <g class="hop">
+    <rect x="2.6" y="5.4" width="9.8" height="9" rx="4.4" fill="#8FA9A0"/>
+    <ellipse cx="7.5" cy="11.6" rx="3" ry="2.5" fill="#F4EFE6" opacity=".92"/>
+    <ellipse cx="1.9" cy="9.8" rx="1.1" ry="1.5" fill="#7A948C"/>
+    <ellipse cx="13.1" cy="9.8" rx="1.1" ry="1.5" fill="#7A948C"/>
+    <rect x="4.2" y="13.3" width="2.2" height="1.6" rx=".8" fill="#7A948C"/>
+    <rect x="8.6" y="13.3" width="2.2" height="1.6" rx=".8" fill="#7A948C"/>
+    <g stroke="#2C2A28" stroke-width=".62" fill="none" stroke-linecap="round">
+      <path d="M4.5 8.9q1-1.1 2 0"/>
+      <path d="M8.5 8.9q1-1.1 2 0"/>
+    </g>
+    <circle cx="3.6" cy="10.6" r=".7" fill="#E39B8A" opacity=".7"/>
+    <circle cx="11.4" cy="10.6" r=".7" fill="#E39B8A" opacity=".7"/>
+    <path d="M6.7 12.1q.8.8 1.6 0" stroke="#2C2A28" stroke-width=".45" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

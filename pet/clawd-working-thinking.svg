@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -25 45 45" width="500" height="500" role="img" aria-label="小屋的小兽">
+  <title>小屋的小兽 · 在想事情</title>
+  <defs>
+    <style>
+      .bob { transform-origin: 7.5px 11px; animation: bob 3.4s ease-in-out infinite; }
+      .d   { animation: dot 1.8s ease-in-out infinite; }
+      .d2  { animation-delay: .3s; }
+      .d3  { animation-delay: .6s; }
+      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-.5px); } }
+      @keyframes dot { 0%,100% { opacity: .25; transform: translateY(0); } 45% { opacity: 1; transform: translateY(-.7px); } }
+      @media (prefers-reduced-motion: reduce) { .bob, .d { animation: none; } }
+    </style>
+  </defs>
+  <ellipse cx="7.5" cy="15.2" rx="4.3" ry=".85" fill="#2C2A28" opacity=".13"/>
+  <g fill="#8FA9A0">
+    <circle class="d"  cx="4.6" cy="2.4" r=".85"/>
+    <circle class="d d2" cx="7.5" cy="1.2" r=".85"/>
+    <circle class="d d3" cx="10.4" cy="2.4" r=".85"/>
+  </g>
+  <g class="bob">
+    <rect x="2.6" y="5.4" width="9.8" height="9" rx="4.4" fill="#8FA9A0"/>
+    <ellipse cx="7.5" cy="11.6" rx="3" ry="2.5" fill="#F4EFE6" opacity=".92"/>
+    <ellipse cx="1.9" cy="10.4" rx="1.1" ry="1.5" fill="#7A948C"/>
+    <ellipse cx="13.1" cy="10.4" rx="1.1" ry="1.5" fill="#7A948C"/>
+    <rect x="4.2" y="13.3" width="2.2" height="1.6" rx=".8" fill="#7A948C"/>
+    <rect x="8.6" y="13.3" width="2.2" height="1.6" rx=".8" fill="#7A948C"/>
+    <g fill="#2C2A28">
+      <circle cx="5.5" cy="7.8" r=".95"/>
+      <circle cx="9.5" cy="7.8" r=".95"/>
+    </g>
+    <path d="M6.6 11.9q.9.7 1.8 0" stroke="#2C2A28" stroke-width=".45" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

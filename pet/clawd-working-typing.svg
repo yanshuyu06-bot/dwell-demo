@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -25 45 45" width="500" height="500" role="img" aria-label="小屋的小兽">
+  <title>小屋的小兽 · 在打字</title>
+  <defs>
+    <style>
+      .tap  { transform-origin: 7.5px 12px; animation: tap .42s ease-in-out infinite; }
+      .tap2 { animation-delay: .21s; }
+      .key  { animation: key .42s ease-in-out infinite; }
+      @keyframes tap  { 0%,100% { transform: translateY(0); } 50% { transform: translateY(.8px); } }
+      @keyframes key  { 0%,100% { opacity: .3; } 50% { opacity: .95; } }
+      @media (prefers-reduced-motion: reduce) { .tap, .key { animation: none; } }
+    </style>
+  </defs>
+  <ellipse cx="7.5" cy="15.2" rx="4.3" ry=".85" fill="#2C2A28" opacity=".13"/>
+  <rect x="1.6" y="13" width="11.8" height="1.9" rx=".9" fill="#5F736D"/>
+  <g class="key" fill="#F4EFE6">
+    <rect x="3" y="13.7" width="1.1" height=".5" rx=".25"/>
+    <rect x="4.8" y="13.7" width="1.1" height=".5" rx=".25"/>
+    <rect x="6.6" y="13.7" width="1.1" height=".5" rx=".25"/>
+    <rect x="8.4" y="13.7" width="1.1" height=".5" rx=".25"/>
+    <rect x="10.2" y="13.7" width="1.1" height=".5" rx=".25"/>
+  </g>
+  <rect x="2.6" y="5.4" width="9.8" height="9" rx="4.4" fill="#8FA9A0"/>
+  <ellipse cx="7.5" cy="11.4" rx="3" ry="2.4" fill="#F4EFE6" opacity=".92"/>
+  <g fill="#2C2A28">
+    <circle cx="5.5" cy="8.7" r=".95"/>
+    <circle cx="9.5" cy="8.7" r=".95"/>
+  </g>
+  <ellipse class="tap"  cx="2.3" cy="11.9" rx="1.15" ry="1" fill="#7A948C"/>
+  <ellipse class="tap tap2" cx="12.7" cy="11.9" rx="1.15" ry="1" fill="#7A948C"/>
+</svg>

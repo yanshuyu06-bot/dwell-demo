@@ -1,0 +1,56 @@
+版权所有 © 2026 · 保留所有权利
+All rights reserved.
+
+--------------------------------------------------------------------------
+中文
+--------------------------------------------------------------------------
+
+本仓库是一个私人项目的**界面展示版**，公开放在这里只是为了让人看看它长什么样子。
+
+【允许】
+  · 查看、阅读本仓库的内容
+  · 在浏览器里打开、点击、体验这个页面
+  · 在保留本文件完整内容的前提下，为介绍、评论、评测的目的引用少量截图或片段
+
+【未允许】
+  · 复制、修改、分发、再发布本仓库的任何部分
+  · 把本仓库的代码或素材用于你自己的项目
+  · 商业使用
+
+也就是说：**欢迎看，但没有授予使用许可。**
+
+需要授权请先联系仓库所有者。
+
+--------------------------------------------------------------------------
+English
+--------------------------------------------------------------------------
+
+This repository is the **interface demo** of a private project. It is public
+only so that people can see what it looks like.
+
+PERMITTED
+  · Viewing and reading the contents of this repository
+  · Opening and interacting with the page in a browser
+  · Quoting brief excerpts or screenshots for the purpose of review or
+    commentary, provided this file is included in full
+
+NOT PERMITTED
+  · Copying, modifying, distributing, or republishing any part of this
+    repository
+  · Using the code or assets in your own project
+  · Commercial use
+
+In short: **look, but no license is granted.**
+
+Please contact the repository owner for permission.
+
+--------------------------------------------------------------------------
+第三方内容 / Third-party content
+--------------------------------------------------------------------------
+
+本仓库**不包含任何第三方美术素材或代码**。
+`pet/` 目录下的 7 个 SVG 均为本仓库原创，详见 `pet/SOURCE.md`。
+
+This repository contains **no third-party artwork or code**.
+The seven SVGs under `pet/` are original to this repository; see
+`pet/SOURCE.md`.

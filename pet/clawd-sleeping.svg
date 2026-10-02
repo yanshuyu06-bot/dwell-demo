@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -25 45 45" width="500" height="500" role="img" aria-label="小屋的小兽">
+  <title>小屋的小兽 · 睡着了</title>
+  <defs>
+    <style>
+      .breathe { transform-origin: 7.5px 11px; animation: breathe 5.8s ease-in-out infinite; }
+      .z  { animation: z 4.2s ease-in-out infinite; }
+      .z2 { animation-delay: 1.4s; }
+      .z3 { animation-delay: 2.8s; }
+      @keyframes breathe { 0%,100% { transform: scale(1,1); } 50% { transform: scale(1.04,.96) translateY(.6px); } }
+      @keyframes z { 0% { opacity: 0; transform: translate(0,.8px); } 30% { opacity: .85; } 100% { opacity: 0; transform: translate(1.1px,-2.6px); } }
+      @media (prefers-reduced-motion: reduce) { .breathe, .z { animation: none; } }
+    </style>
+  </defs>
+  <ellipse cx="7.5" cy="15.2" rx="4.5" ry=".9" fill="#2C2A28" opacity=".13"/>
+  <g stroke="#9FB6AE" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g class="z"><path d="M11.2 6.2h1.5l-1.5 1.8h1.5" stroke-width=".6"/></g>
+    <g class="z z2"><path d="M12.2 3.4h1.8l-1.8 2.1h1.8" stroke-width=".7"/></g>
+    <g class="z z3"><path d="M11.6 .8h2.1l-2.1 2.4h2.1" stroke-width=".8"/></g>
+  </g>
+  <g class="breathe">
+    <rect x="2.6" y="5.4" width="9.8" height="9" rx="4.4" fill="#8FA9A0"/>
+    <ellipse cx="7.5" cy="11.6" rx="3" ry="2.5" fill="#F4EFE6" opacity=".92"/>
+    <ellipse cx="1.9" cy="10.8" rx="1.1" ry="1.4" fill="#7A948C"/>
+    <ellipse cx="13.1" cy="10.8" rx="1.1" ry="1.4" fill="#7A948C"/>
+    <rect x="4" y="13.4" width="2.4" height="1.5" rx=".75" fill="#7A948C"/>
+    <rect x="8.6" y="13.4" width="2.4" height="1.5" rx=".75" fill="#7A948C"/>
+    <g stroke="#2C2A28" stroke-width=".6" fill="none" stroke-linecap="round">
+      <path d="M4.4 8.8q1.1 1 2.2 0"/>
+      <path d="M8.4 8.8q1.1 1 2.2 0"/>
+    </g>
+  </g>
+</svg>

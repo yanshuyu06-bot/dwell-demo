@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -25 45 45" width="500" height="500" role="img" aria-label="小屋的小兽">
+  <title>小屋的小兽 · 蹦了一下</title>
+  <defs>
+    <style>
+      .jump { transform-origin: 7.5px 15px; animation: jump 1.2s cubic-bezier(.3,0,.4,1) infinite; }
+      .arc  { animation: arc 1.2s ease-out infinite; }
+      .sp   { animation: sp 1.2s ease-in-out infinite; }
+      @keyframes jump {
+        0%   { transform: translateY(0) scale(1,1); }
+        18%  { transform: translateY(-2.6px) scale(.97,1.05); }
+        36%  { transform: translateY(0) scale(1.05,.95); }
+        52%  { transform: translateY(-1.5px) scale(.98,1.03); }
+        70%,100% { transform: translateY(0) scale(1,1); }
+      }
+      @keyframes arc { 0% { opacity: .7; transform: scale(.7); } 60%,100% { opacity: 0; transform: scale(1.25); } }
+      @keyframes sp  { 0%,100% { opacity: .15; } 45% { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { .jump, .arc, .sp { animation: none; } }
+    </style>
+  </defs>
+  <ellipse cx="7.5" cy="15.6" rx="3.8" ry=".7" fill="#2C2A28" opacity=".1"/>
+  <g fill="none" stroke="#B9CCC6" stroke-width=".6" stroke-linecap="round">
+    <path class="arc" d="M2.4 15.1q1.4-1.5 1.9-3.2"/>
+    <path class="arc" d="M12.6 15.1q-1.4-1.5-1.9-3.2"/>
+  </g>
+  <g fill="#E8B26A">
+    <path class="sp" d="M.9 5.6l.5 1.2 1.2.5-1.2.5-.5 1.2-.5-1.2-1.2-.5 1.2-.5z"/>
+    <path class="sp" d="M14.1 4.4l.45 1.05 1.05.45-1.05.45-.45 1.05-.45-1.05-1.05-.45 1.05-.45z"/>
+  </g>
+  <g class="jump">
+    <rect x="2.6" y="5.4" width="9.8" height="9" rx="4.4" fill="#8FA9A0"/>
+    <ellipse cx="7.5" cy="11.6" rx="3" ry="2.5" fill="#F4EFE6" opacity=".92"/>
+    <ellipse cx="1.7" cy="7.9" rx="1.1" ry="1.6" fill="#7A948C" transform="rotate(-28 1.7 7.9)"/>
+    <ellipse cx="13.3" cy="7.9" rx="1.1" ry="1.6" fill="#7A948C" transform="rotate(28 13.3 7.9)"/>
+    <rect x="4.1" y="13.2" width="2.2" height="1.7" rx=".85" fill="#7A948C" transform="rotate(-12 5.2 14)"/>
+    <rect x="8.7" y="13.2" width="2.2" height="1.7" rx=".85" fill="#7A948C" transform="rotate(12 9.8 14)"/>
+    <g fill="#2C2A28">
+      <circle cx="5.5" cy="8.5" r="1.15"/>
+      <circle cx="9.5" cy="8.5" r="1.15"/>
+    </g>
+    <path d="M6.5 11.4q1 1.2 2 0" stroke="#2C2A28" stroke-width=".5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
