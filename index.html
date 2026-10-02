@@ -2768,6 +2768,21 @@ const DEMO_EXTRA = {
   Object.assign(D, DEMO_EXTRA);
   D['api/authmode'] = { mode: 'api', base: 'https://api.example-relay.com/v1',
                        models: { model_opus: 'demo-model' } };
+  /* 深链接：?show=lock / chat / todo / cal / shop / wall / photos /
+     nook / vocab / health / cards —— 直接打开某一页。 */
+  try {
+    const show = new URLSearchParams(location.search).get('show');
+    if (show && show !== 'lock') {
+      sessionStorage.setItem('skipLock', '1');
+      if (show !== 'chat') addEventListener('load', () => setTimeout(() => {
+        const map = { todo: 'navTodo', cal: 'navCal', shop: 'navShop', wall: 'navWall',
+          photos: 'navPhotos', nook: 'navNook', vocab: 'navVocab',
+          health: 'navHealth', cards: 'navCards' };
+        const el = document.getElementById(map[show]);
+        if (el) el.click();
+      }, 350));
+    }
+  } catch (e) {}
   const R = (o) => new Response(JSON.stringify(o), { headers: { 'Content-Type': 'application/json' } });
   const real = window.fetch;
   window.fetch = function (input) {
